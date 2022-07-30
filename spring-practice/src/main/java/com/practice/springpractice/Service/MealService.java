@@ -15,7 +15,7 @@ public class MealService {
     public MealService(){
         this.menuList = new ArrayList<>();
         this.menuList.add(new Meal("hamburger",100,"This is delicious"));
-        this.menuList.add(new Meal("ice cream",200,"This is delicious"));
+        this.menuList.add(new Meal("ice_cream",200,"This is delicious"));
         this.orderList = new ArrayList<>();
         this.orderList.add(new Order(1,2000,"Leo",menuList));
         this.orderList.add(new Order(2,4000,"Leo",menuList));

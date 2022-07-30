@@ -10,7 +10,12 @@
 <body>
 <h1>Hello World</h1>
 <h2 th:text="'今天營業總金額：'+${total}"></h2><br/>
-<h3 th:text="'單號：'+${orderList.get(0).seq}+' 價錢：'+${orderList.get(0).totalPrice}+' 服務人員：'+${orderList.get(0).waiter}"></h3>
-<h3 th:text="'單號：'+${orderList.get(1).seq}+' 價錢：'+${orderList.get(1).totalPrice}+' 服務人員：'+${orderList.get(1).waiter}"></h3>
+<!--<h3 th:text="'單號：'+${orderList.get(0).seq}+' 價錢：'+${orderList.get(0).totalPrice}+' 服務人員：'+${orderList.get(0).waiter}"></h3>-->
+<!--<h3 th:text="'單號：'+${orderList.get(1).seq}+' 價錢：'+${orderList.get(1).totalPrice}+' 服務人員：'+${orderList.get(1).waiter}"></h3>-->
+<tr th:each="orderList,status:${orderList}">
+  <td th:text="'單號：'+${orderList.seq}"></td>
+  <td th:text="'價錢：'+${orderList.totalPrice}"></td>
+  <td th:text="'服務人員：'+${orderList.waiter}"></td><br/>
+</tr>
 </body>
 </html>
