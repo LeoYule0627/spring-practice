@@ -18,8 +18,8 @@ public class MealController {
     @GetMapping
     public String getUserByName(@RequestParam String name, Model model){
         Meal meal = this.userService.getMealByName(name);
-        model.addAttribute("user",meal);
-        return "Meal";  //與html名稱有關
+        model.addAttribute("meal",meal); //"user"與html裡呼叫有關
+        return "Meal";  //"Meal"與html名稱有關
     }
 
 }
