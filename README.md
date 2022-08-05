@@ -9,5 +9,5 @@ http://localhost:8080/meal?name=ice_cream
 http://localhost:8080/order/1  
 http://localhost:8080/order/2  
 第三題 Total：  
-http://localhost:8080/total  
+http://localhost:8080/
  
