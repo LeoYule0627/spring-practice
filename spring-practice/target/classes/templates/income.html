@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Total</title>
+</head>
+<body>
+<h1>Hello World</h1>
+<h2 th:text="'今天營業總金額：'+${income}"></h2><br/>
+<!--<h3 th:text="'單號：'+${orderList.get(0).seq}+' 價錢：'+${orderList.get(0).totalPrice}+' 服務人員：'+${orderList.get(0).waiter}"></h3>-->
+<!--<h3 th:text="'單號：'+${orderList.get(1).seq}+' 價錢：'+${orderList.get(1).totalPrice}+' 服務人員：'+${orderList.get(1).waiter}"></h3>-->
+
+<tr th:each="order:${orderList}">
+  <td th:text="'單號：'+${order.seq}"></td>
+  <td th:text="'價錢：'+${order.totalPrice}"></td>
+  <td th:text="'服務人員：'+${order.waiter}"></td><br/>
+</tr>
+</body>
+</html>

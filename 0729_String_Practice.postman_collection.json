@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "35010165-6ec2-4c75-9720-e7324223097f",
+		"_postman_id": "25f3cd3c-2f69-401f-86ea-ad8c74f3ea3e",
 		"name": "0729_String_Practice",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "22480602"
@@ -97,19 +97,20 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/total",
+			"name": "http://localhost:8080/income",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/total",
+					"raw": "http://localhost:8080/order/income",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"total"
+						"order",
+						"income"
 					]
 				}
 			},
